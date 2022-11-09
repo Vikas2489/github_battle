@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.active-red {
+    color: #ba3126;
+}
+
+[class*='classic']:before {
+    content: 'Fetching...';
+}
+
+.classic-1 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    animation: c1 1s linear infinite alternate;
+}
+
+@keyframes c1 {
+    to {
+        opacity: 0;
+    }
+}
+
+.dark-bg {
+    background-color: #1d2122;
+}
+
+.text-greyish {
+    color: #dadbdb;
+}
